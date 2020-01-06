@@ -18,7 +18,7 @@ connect.py
 ------------
 > class connectSQL
 >> function connect
->>> connect to table
+>>> connect to SQL
 
 >> function createTable
 >>> create new table
