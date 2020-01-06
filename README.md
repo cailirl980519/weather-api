@@ -32,13 +32,10 @@ connect.py
 SQL(Use mySQL)
 ---------------
 * Table history
-| time      | city        | weather     | humidity     |
-| ---------- | :-----------:  | :-----------: | :-----------: |
-| timestamp | varchar(45) | varchar(45) | varchar(45)  |
 
-| time      | city     | weather     | humidity     |
+| time*      | city     | weather     | humidity     |
 | ---------- | :-----------:  | :-----------: | :-----------: |
-| timestamp     | varchar(45)     | varchar(45)     |
+| timestamp     | varchar(45)     | varchar(45)     | varchar(45)     |
 
 HOW TO USE
 ------------
