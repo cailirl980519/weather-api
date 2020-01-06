@@ -7,8 +7,10 @@ weather.py
 >> function main
 >>> create new table
 >>> Define what user choose
+
 >> function get weather
 >>> Concatenation weather api and return information
+
 >> funtion show
 >>> print weather information
 
