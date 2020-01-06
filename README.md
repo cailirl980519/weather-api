@@ -36,9 +36,9 @@ SQL(Use mySQL)
 | ---------- | :-----------:  | :-----------: | :-----------: |
 | timestamp | varchar(45) | varchar(45) | varchar(45)  |
 
-| time      | 第一列     | 第二列     |
-| ---------- | :-----------:  | :-----------: |
-| timestamp     | 第一列     | 第二列     |
+| time      | city     | weather     | humidity     |
+| ---------- | :-----------:  | :-----------: | :-----------: |
+| timestamp     | varchar(45)     | varchar(45)     |
 
 HOW TO USE
 ------------
