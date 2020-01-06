@@ -19,10 +19,13 @@ connect.py
 > class connectSQL
 >> function connect
 >>> connect to table
+
 >> function createTable
 >>> create new table
+
 >> function insertData
 >>> insert the data what user searched
+
 >> function record
 >>> fetch top5 SQL data and print
 
