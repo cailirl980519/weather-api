@@ -29,6 +29,13 @@ connect.py
 >> function record
 >>> fetch top5 SQL data and print
 
+SQL(Use mySQL)
+---------------
+* Table history
+| time      | city        | weather     | humidity     |
+| ---------- | :-----------:  | :-----------: | :-----------: |
+| timestamp | varchar(45) | varchar(45) | varchar(45)  |
+
 HOW TO USE
 ------------
 Open weather.py
