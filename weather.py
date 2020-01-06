@@ -1,4 +1,5 @@
 import requests, json
+import logging
 from connect import connectSQL
 
 class Weather(object):
@@ -22,6 +23,8 @@ class Weather(object):
                 print('====================\n')
             elif ch == '3':
                 break
+            else:
+                logging.error("Enter Invalid.")
 
     def getweather(self):
         url="http://api.openweathermap.org/data/2.5/weather?q={}&appid=bd45fc9db8849cb46d00a451483ccd44&lang=zh_tw&units=metric".format(self.city)
