@@ -43,6 +43,7 @@ self.table = 'HISTORY'
 
 HOW TO USE
 ------------
+Create a DB schema(weather as default)  
 Open weather.py
 1. Search weather
 * Enter a city name will show weather information of the city.
