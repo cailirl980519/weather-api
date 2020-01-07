@@ -5,6 +5,8 @@ class connectSQL(object):
 	def __init__(self):
 		# logging.basicConfig(level = logging.INFO)
 		self.connect()
+		self.schema = 'weather'
+		self.table = 'HISTORY'
 
 	def connect(self):
 		try:
@@ -22,13 +24,13 @@ class connectSQL(object):
 
 	def createTable(self):
 		self.cursor.execute("DROP TABLE IF EXISTS HISTORY")
-		sql = """CREATE TABLE `weather`.`HISTORY` (
+		sql = """CREATE TABLE {}.{} (
 					`time` TIMESTAMP NOT NULL,
 					`city` VARCHAR(45) NOT NULL,
 					`weather` VARCHAR(45) NULL,
 					`temp` VARCHAR(45) NULL,
 					`humidity` VARCHAR(45) NULL,
-					PRIMARY KEY (`time`));"""
+					PRIMARY KEY (`time`));""".format(self.schema, self.table)
 		try:
 			self.cursor.execute(sql)
 			logging.info('create table success')
@@ -36,8 +38,8 @@ class connectSQL(object):
 			logging.info('create table error')
 
 	def insertData(self, city, weather, temp, humidity):
-		sql = """INSERT INTO `weather`.`HISTORY`(time, city, weather, temp, humidity) 
-				VALUES(NOW(),'{}','{}',{},{})""".format(city, weather, temp, humidity)
+		sql = """INSERT INTO {}.{}(time, city, weather, temp, humidity) 
+				VALUES(NOW(),'{}','{}',{},{})""".format(self.schema, self.table, city, weather, temp, humidity)
 		try:
 			self.cursor.execute(sql)
 			self.db.commit()
