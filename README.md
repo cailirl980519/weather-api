@@ -29,9 +29,13 @@ connect.py
 >> function record
 >>> fetch top5 SQL data and print
 
-SQL(Use mySQL)
+Database(Use mySQL)
 ---------------
-* Table history
+* Schema name: weather(default)  
+* Table name: history(default)  
+You can change your name of schema and table in following code  
+self.schema = 'weather'  
+self.table = 'HISTORY'  
 
 | time*      | city     | weather     | humidity     |
 | ---------- | :-----------:  | :-----------: | :-----------: |
